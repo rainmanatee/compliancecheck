@@ -418,9 +418,11 @@ if __name__ == "__main__":
         if len(sys.argv) >= 2:
                 if 'start' == sys.argv[1]:
                         print 'CVP Compliance Checker started.  Executing every %s seconds.' % INTERVAL
+                        sendSyslog([CVPSERVER], 'CVP Compliance Checker started.  Executing every %s seconds against' % INTERVAL)
                         print '#'*120
                         daemon.start()
                 elif 'stop' == sys.argv[1]:
+                        sendSyslog([CVPSERVER], 'Compliance Checker Stopping against')
                         daemon.stop()
                 elif 'restart' == sys.argv[1]:
                         daemon.restart()
