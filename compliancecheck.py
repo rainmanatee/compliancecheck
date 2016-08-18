@@ -69,6 +69,7 @@ EMAILPORT = 587  # Email server port, for gmail, 587 is default
 CURSTATUS = {}
 
 assert CVPSERVER is not None
+assert SYSLOGSERVER is not None
 
 class MyDaemon(Daemon):
     def run(self):
