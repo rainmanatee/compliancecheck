@@ -55,6 +55,7 @@ import cvp
 
 # Configuration settings, modify as needed.
 
+
 MIN_INTERVAL = 60  # This is the minimum recommended interval the script should run in seconds
 CVPSERVER = None  # CVP server name mandatory, use quotes
 SYSLOGSERVER = '/var/run/syslog'  # syslog server ip, mandatory if using syslog, use quotes
